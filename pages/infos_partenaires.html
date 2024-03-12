@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="fr">
+	<head>
+		<title>Festival</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../assets/css/main.css">
+        <style>
+            .partners-container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            .partner {
+                width: 100%;
+                height: 150px;
+                border: 1px solid #ccc;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .partner img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .partner::before {
+                content: "A venir - A venir - A venir - A venir - A venir - A venir - ";
+                white-space: nowrap;
+                position: absolute;
+                top: 50%;
+                left: 100%; /* Démarre à partir du bord droit */
+                transform: translateY(-50%);
+                animation: moveText 10s linear infinite;
+                animation-delay: -5s;
+                width: max-content;
+            }
+
+            @keyframes moveText {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>RythmMix</strong> Festival</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+                            <!-- Partenaires -->
+                            <br>
+                            <br>
+                            <ul class="partners-container">
+                                <li class="partner" id="partner1"></li>
+                                <li class="partner" id="partner2"></li>
+                                <li class="partner" id="partner3"></li>
+                                <li class="partner" id="partner4"></li>
+                                <li class="partner" id="partner5"></li>
+                                <li class="partner" id="partner6"></li>
+                                <li class="partner" id="partner7"></li>
+                                <li class="partner" id="partner8"></li>
+                                <li class="partner" id="partner9"></li>
+                                <li class="partner" id="partner10"></li>
+                                <li class="partner" id="partner11"></li>
+                                <li class="partner" id="partner12"></li>
+                                <li class="partner" id="partner13"></li>
+                                <li class="partner" id="partner14"></li>
+                                <li class="partner" id="partner15"></li>
+                            </ul>
+                            
+							<!-- Banner -->
+
+							<!-- Footer -->
+
+
+                                
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search 
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search">
+									</form>
+								</section>
+							-->
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="../index.html">Festival</a></li>
+										<li>
+											<span class="opener">Line Up</span>
+											<ul>
+												<li><a href="line_up_day1.html">Jour 1</a></li>
+												<li><a href="line_up_day2.html">Jour 2</a></li>
+												<li><a href="line_up_day3.html">Jour 3</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Catégories</span>
+											<ul>
+												<li><a href="categorie_techno.html">Techno</a></li>
+												<li><a href="categorie_rock.html">Rock</a></li>
+												<li><a href="categorie_rap.html">Rap</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Billeterie</span>
+											<ul>
+												<li><a href="tickets_festival.html">Tickets Festival</a></li>
+												<li><a href="tickets_camping.html">Pass Camping</a></li>
+												<li><a href="tickets_transport.html">Ticket Transport</a></li>
+												<li><a href="tickets_merch.html">Merchandise</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Infos Pratiques</span>
+											<ul>
+												<li><a href="infos_plan.html">Plan</a></li>
+												<li><a href="infos_faq.html">FAQ</a></li>
+												<li><a href="infos_partenaires.html">Partenaires</a></li>
+											</ul>
+										</li>
+										<li><a href="jobs.html">Jobs</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt=""></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt=""></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt=""></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br>
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const partners = [
+                        "../images/partner1.jpg", "partner2.jpg", "partner3.jpg", "partner4.jpg", "partner5.jpg",
+                        // Ajoutez plus de noms de partenaires si nécessaire
+                    ];
+        
+                    const partnerElements = document.querySelectorAll('.partner');
+                    partnerElements.forEach(function(partner, index) {
+                        const partnerId = index + 1;
+                        const partnerImage = new Image();
+                        partnerImage.src = `partner${partnerId}.jpg`;
+                        partnerImage.onerror = function() {
+                            const span = partner.querySelector('span');
+                            span.textContent = "A venir - A venir - A venir - A venir - A venir - A venir - ";
+                        };
+                        partnerImage.onload = function() {
+                            const span = partner.querySelector('span');
+                            span.innerHTML = ''; // Nettoie le contenu précédent
+                            span.appendChild(partnerImage);
+                        };
+                    });
+                });
+            </script>
+
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+
+
+</html>
