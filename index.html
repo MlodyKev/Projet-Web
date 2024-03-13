@@ -10,6 +10,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="assets/css/main.css">
+		<style>
+			body, html {
+				margin: 0;
+				padding: 0;
+			}
+
+			.background-image {
+				background-image: url('images/indexBackground.jpg');
+				background-size: cover; /* L'image de fond couvrira entièrement le div */
+				background-position: center; /* L'image de fond sera centrée */
+				width: 100%; /* L'image de fond occupera toute la largeur de la fenêtre */
+				height: 100vh; /* L'image de fond s'étendra jusqu'à la hauteur maximale de la fenêtre */
+				padding: 0;
+				margin :0;
+			}
+
+			.container {
+				width: 100%;
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 20px; /* Ajoutez un padding pour éviter que le contenu ne touche les bords de l'écran */
+			}
+
+			.headerIndex {
+				background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent pour l'en-tête */
+				padding: 20px;
+				position: fixed; /* Position fixe pour que l'en-tête reste en haut de la page */
+				width: 100%; /* L'en-tête prendra toute la largeur de la fenêtre */
+				z-index: 1; /* Assurez-vous que l'en-tête reste au-dessus de l'image de fond */
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -30,7 +62,10 @@
 										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
 									</ul>
+									
 								</header>
+
+								<div class="background-image"></div>
 
 							<!-- Flex Box -->
 
