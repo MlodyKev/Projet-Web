@@ -31,9 +31,14 @@ h1, h2, h3, h4, h5 {
     font-family: "Playfair Display", serif;
 }
 
-a {
+a:not(#menu a) {
     color: #DB7093; 
     text-decoration: none; 
+}
+
+#menu a {
+    color: #5D5D5D; 
+    text-decoration: none;
 }
   
 a:hover, a:focus {
