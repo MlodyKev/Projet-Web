@@ -1,0 +1,28 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <!-- links -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<!-- logo -->
+<!-- navbar -->
+<!-- fil d'arianne -->
+<section id="newsletter">
+    <form action="../assets/php/traitementNewsletter.php" method="POST">
+        <h1>S'abonner à la newsletter</h1>
+        <p><input type="email" name="email" placeholder="Email" required></p>
+        <p><input type="text" name="prenom" placeholder="Prénom" required></p>
+        <p><input type="text" name="nom" placeholder="Nom" required></p>
+        <p> 
+            <label for="checkbox">En cochant cette case, j'accepte de recevoir par mail des informations, des actualités et des offres promotionnelles concernant nomDuFestival.</label>
+            <input type="checkbox" id="checkbox" name="consentement" value="oui">
+        </p>
+        <p><button type="submit">S'abonner</button></p>
+    </form>
+</section>
+</body>
+<!-- footer -->
+</html>
