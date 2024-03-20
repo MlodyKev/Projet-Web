@@ -13,16 +13,43 @@
         }
 
         footer ul li {
-            display: flex;
-            /*removes the little dot next to list elements*/
             padding: 1em;
-
             justify-content: space-around;
+            list-style-type: none;
         }
 
         a {
             border-bottom: none;
-            /*removes bottom border from main css*/
+            /*removes bottom border of email from main css*/
+        }
+
+        footer {
+            height: 0rem;
+            /*removes the useless side scroll bar*/
+        }
+
+        ul.breadcrumb li {
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before {
+            /* Add a slash symbol (/) before/behind each list item */
+            padding: 5px;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: #0275d8;
+        }
+
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+
+        #banner {
+            flex-direction: column;
+            margin-top: -4em;
         }
     </style>
 </head>
@@ -33,24 +60,33 @@
             <div class="inner">
                 <header id="header">
                     <a href="../index.html" class="logo"><strong>RythmMix</strong> Festival</a>
-
                 </header>
+
+                <div>
+                    <ul class="breadcrumb">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../pages/categorie_rock.html">ROCK</a></li>
+                    </ul>
+                </div>
 
                 <!-- Flex Box -->
                 <section id="banner">
                     <div class="content">
                         <header>
-                            <h1>Annonce : <br>
-                                Nouveaux-elles <br>
-                                artiste(s)</h1>
-                            <p>Aya Nakamura et Christophe Maé au RythmMix Festival !</p>
+                            <h1>BRING ME THE HORIZON</h1>
+                            <p>Bring Me the Horizon, parfois abrégé BMTH, est un groupe de metal britannique, originaire de Sheffield, dans le Yorkshire. Bring Me the Horizon est devenu au fil des années une figure emblématique de la scène post-hardcore et rock en général.</p>
                         </header>
-                        <p>L'artiste franco-malienne aux singles internationaux a annoncé participer au festival ce Mercredi 12 mars 2024. Christophé Maé, la star de la pop et de la chanson française, sera également présent.</p>
-
                     </div>
                     <span class="image object">
-                        <img src="../assets/images/pic10.jpg" alt="">
+                        <img src="../assets/images/bmth.jpg" alt="">
                     </span>
+                    <div class="content">
+                        <header>
+                            <h1>BRING ME THE HORIZON</h1>
+                            <p>Bring Me the Horizon, parfois abrégé BMTH, est un groupe de metal britannique, originaire de Sheffield, dans le Yorkshire. Bring Me the Horizon est devenu au fil des années une figure emblématique de la scène post-hardcore et rock en général.</p>
+                        </header>
+                    </div>
+
                 </section>
 
                 <footer id="footer">
@@ -120,6 +156,7 @@
                 </nav>
             </div>
         </div>
+
     </div>
 
     <!-- Scripts -->
