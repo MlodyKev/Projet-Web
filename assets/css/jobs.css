@@ -1,0 +1,29 @@
+.tel, .mail {
+    display: inline-block;
+    padding-right: 7px;
+    margin-right: 5px;
+}
+.mail {
+    font-size: 30px;
+}
+li {
+    list-style-type: none;
+}
+ul li:first-child a {
+    text-decoration: none;
+}
+a[href] {
+    color: black;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
