@@ -1,138 +1,183 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-	<head>
-		<title>Festival</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../assets/css/main.css">
-		<link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
-        <style>
-			#header {
-				background-size: cover;
-				background-position: center; 
-				background-image: url('../assets/images/default_images/indexBackground.png');
-				width: 100% ; 
-				height: 30vh;
-				content: var(--tw-content);
-                transform: skewY(-2.2deg);
-                transform-origin:0 0;
-			}
-			
-			#header .logo {
-				display : flex;
-                align-items : center;
-                justify-content: center;
-				position : relative;
-				border-bottom: 0;
-				color: white;
-				font-size: 3.125em; 
-			}
 
-            #imgLogo {
-                width: 5%;
-            }
+<head>
+    <title>Festival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
+    <style>
+        ul.breadcrumb li {
+            display: inline;
+        }
 
-            #imgLogo:hover {
-                transform: scaleX(-1);
-            }   
-        </style>
-	</head>
-	<body class="is-preload">
+        ul.breadcrumb li+li:before {
+            /* Add a slash symbol (/) before/behind each list item */
+            padding: 5px;
+            content: "/\00a0";
+        }
 
-		<!-- Wrapper -->
-        <div id="wrapper">
+        ul.breadcrumb li a {
+            color: #0275d8;
+        }
 
-            <!-- Main -->
-                <div id="main">
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
 
-                    <!-- Header -->
-                    <header id="header">
-                            <a href="../index.html" class="logo">
-                                <img src="../assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
-                                <strong>RythmMix</strong> Festival
-                            </a>
+        #header {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../assets/images/default_images/indexBackground.png');
+            width: 100%;
+            height: 30vh;
+            content: var(--tw-content);
+            transform: skewY(-2.2deg);
+            transform-origin: 0 0;
+        }
+
+        #header .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 0;
+            color: white;
+            font-size: 3.125em;
+        }
+
+        #imgLogo {
+            width: 5%;
+        }
+
+        #imgLogo:hover {
+            transform: scaleX(-1);
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer ul li {
+            padding: 1em;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
+                    <strong>RythmMix</strong> Festival
+                </a>
+            </header>
+            <div>
+                <ul class="breadcrumb">
+                    <li><a href="../pages/default.html">Accueil</a></li>
+                </ul>
+            </div>
+
+            <!-- Inner -->
+            <div class="inner">
+
+                <!-- CONTENU -->
+                <h1>Titre</h1>
+
+                <h2>Sous-titre de FOU MALATE</h2>
+
+                <h3>Sous-sous-titre de ZINZIN</h3>
+
+                <p>CONTENU DE OUF OUAIS OUAIS MAGUEULE</p>
+                <p>Le clavier est votre meilleur ami !</p>
+                <p>La souris est votre pire ennemi, FUYEZ !</p>
+                <p>Vive les FOKATCHA !</p>
+
+            </div>
+            <footer id="footer">
+                <ul>
+                    <li>Av. de l'Astronomie 19, 1210 Saint-Josse-ten-Noode</li>
+                    <li>02 777 10 1099</li>
+                    <li><a href="mailto:rythmmix@info.be">RythmMix@info.be</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
                     </header>
-                    
-                    <!-- Inner -->
-                    <div class="inner">
+                    <ul>
+                        <li><a href="../index.html">Festival</a></li>
+                        <li>
+                            <span class="opener">Line Up</span>
+                            <ul>
+                                <li><a href="line_up_day1.html">Jour 1</a></li>
+                                <li><a href="line_up_day2.html">Jour 2</a></li>
+                                <li><a href="line_up_day3.html">Jour 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Catégories</span>
+                            <ul>
+                                <li><a href="categorie_techno.html">Techno</a></li>
+                                <li><a href="categorie_rock.html">Rock</a></li>
+                                <li><a href="categorie_rap.html">Rap</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Billeterie</span>
+                            <ul>
+                                <li><a href="tickets_festival.html">Tickets Festival</a></li>
+                                <li><a href="tickets_camping.html">Pass Camping</a></li>
+                                <li><a href="tickets_transport.html">Ticket Transport</a></li>
+                                <li><a href="tickets_merch.html">Merchandise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Infos Pratiques</span>
+                            <ul>
+                                <li><a href="infos_plan.html">Plan</a></li>
+                                <li><a href="infos_faq.html">FAQ</a></li>
+                                <li><a href="infos_partenaires.html">Partenaires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
 
-                            <!-- CONTENU -->
-                            <h1>Titre</h1>
+                <!-- Socials -->
 
-                            <h2>Sous-titre de FOU MALATE</h2>
+                <!-- Footer -->
 
-                            <h3>Sous-sous-titre de ZINZIN</h3>
-                            
-                            <p>CONTENU DE OUF OUAIS OUAIS MAGUEULE</p>
-                            <p>Le clavier est votre meilleur ami !</p>
-                            <p>La souris est votre pire ennemi, FUYEZ !</p>
-                            <p>Vive les FOKATCHA !</p>
+            </div>
+        </div>
+    </div>
 
-					</div>
-				</div>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
 
-				    <!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="../index.html">Festival</a></li>
-										<li>
-											<span class="opener">Line Up</span>
-											<ul>
-												<li><a href="line_up_day1.html">Jour 1</a></li>
-												<li><a href="line_up_day2.html">Jour 2</a></li>
-												<li><a href="line_up_day3.html">Jour 3</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Catégories</span>
-											<ul>
-												<li><a href="categorie_techno.html">Techno</a></li>
-												<li><a href="categorie_rock.html">Rock</a></li>
-												<li><a href="categorie_rap.html">Rap</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Billeterie</span>
-											<ul>
-												<li><a href="tickets_festival.html">Tickets Festival</a></li>
-												<li><a href="tickets_camping.html">Pass Camping</a></li>
-												<li><a href="tickets_transport.html">Ticket Transport</a></li>
-												<li><a href="tickets_merch.html">Merchandise</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Infos Pratiques</span>
-											<ul>
-												<li><a href="infos_plan.html">Plan</a></li>
-												<li><a href="infos_faq.html">FAQ</a></li>
-												<li><a href="infos_partenaires.html">Partenaires</a></li>
-											</ul>
-										</li>
-										<li><a href="jobs.html">Jobs</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</nav>
-                                
-							<!-- Socials -->
-
-							<!-- Footer -->
-
-						</div>
-					</div>
-		</div>
-
-		    <!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-	</body>
 </html>
