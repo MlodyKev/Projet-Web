@@ -7,6 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="../assets/css/main.css">
     <style>
+        #header {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../assets/images/default_images/indexBackground.png');
+            width: 100%;
+            height: 30vh;
+            content: var(--tw-content);
+            transform: skewY(-2.2deg);
+            transform-origin: 0 0;
+        }
+
+        #header .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 0;
+            color: white;
+            font-size: 3.125em;
+        }
+
+        #imgLogo {
+            width: 5%;
+        }
+
+        #imgLogo:hover {
+            transform: scaleX(-1);
+        }
+
         footer ul {
             display: flex;
             justify-content: space-around;
@@ -66,11 +95,14 @@
 <body class="is-preload">
     <div id="wrapper">
         <div id="main">
-            <div class="inner">
-                <header id="header">
-                    <a href="../index.html" class="logo"><strong>RythmMix</strong> Festival</a>
-                </header>
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
+                    <strong>RythmMix</strong> Festival
+                </a>
+            </header>
 
+            <div class="inner">
                 <div>
                     <ul class="breadcrumb">
                         <li><a href="../index.html">Accueil</a></li>
