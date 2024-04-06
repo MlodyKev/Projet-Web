@@ -1,43 +1,321 @@
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merch</title>
-    <!-- links -->
+    <title>Festival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
+    <style>
+        ul.breadcrumb li {
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before {
+            /* Add a slash symbol (/) before/behind each list item */
+            padding: 5px;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: #0275d8;
+        }
+
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+
+        #header {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../assets/images/default_images/indexBackground.png');
+            width: 100%;
+            height: 30vh;
+            content: var(--tw-content);
+            transform: skewY(-2.2deg);
+            transform-origin: 0 0;
+        }
+
+        #header .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 0;
+            color: white;
+            font-size: 3.125em;
+        }
+
+        #imgLogo {
+            width: 5%;
+        }
+
+        #imgLogo:hover {
+            transform: scaleX(-1);
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer ul li {
+            padding: 1em;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+    </style>
 </head>
-<body>
-<!-- logo -->
-<!-- navbar -->
-<!-- fil d'arianne -->
 
-<!-- mini navbar: boissons + nourriture; vêtements; autographe; ... -->
+<body class="is-preload">
 
-<section id="presentation">
-    <!-- contenu: presentation etc -->
-</section>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-<section id="food">
-    <!-- contenu: prix et détails -->
-    <!-- images -->
-    <!-- sous-section réservation bbq ? -->
-    <!-- sous-section nourriture -->
-    <!-- sous-section boissons -->
-    <!-- sous-section restaurant partenaires alentour ? -->
-</section>
+        <!-- Main -->
+        <div id="main">
 
-<section id="clothes">
-    <!-- contenu: prix et détails -->
-    <!-- images -->
-    <!-- livraison ? -->
-    <!-- sous-section offre limitée ? -->
-</section>
+            <!-- Header -->
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
+                    <strong>RythmMix</strong> Festival
+                </a>
+            </header>
+            <div>
+                <ul class="breadcrumb">
+                    <li><a href="../pages/default.html">Accueil</a></li>
+                </ul>
+            </div>
 
-<section id="autographe">
-    <!-- lien vers les pages line-ups ? -->
-    <!-- formulaire de réservation -->
-    <!-- contenu: prix et détails -->
-</section>
+            <!-- Inner -->
+            <div class="inner">
 
+                <!-- CONTENU -->
+                <h1>Merch</h1>
+
+                <style>
+        
+                    .barre-navigation {
+                        background-color: #881B1B; 
+                        padding: 10px; 
+                        max-width: 100%;
+                    }
+            
+                    .barre-navigation a {
+                        color: white; 
+                        text-decoration: none; 
+                        padding: 10px 20px; 
+                        margin-right: 10px; 
+                        border-radius: 5px; 
+                        transition: background-color 0.3s ease; 
+                        font-size: larger;
+                        text-align: center;
+                        
+                    }
+            
+                    .barre-navigation a:hover {
+                        background-color: salmon; 
+                        color: #881B1B;
+                    }
+            
+                    .barre-navigation a.active {
+                        background-color: #666; 
+                    }
+            
+                    .contenu {
+                        margin-top: 5%;
+                        font-size: larger;
+                    }
+            
+                    .contenu > div {
+                        display: none; 
+                    }
+            
+                </style>
+            
+                <style>
+                    /* body {
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        margin-left: 7%;
+                        margin-right: 7%;
+                        position: relative;
+                    } */
+                    p.content {
+                        margin: 20px;
+                    }
+            
+                    /* .bouton-home {
+                        display: inline-block;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        width: 5%;
+                    }
+            
+                    .bouton-home img{
+                        width: 100%;
+                        height: auto;
+                    } */
+            
+                    .custom-link {
+                        color: blue; 
+                        text-decoration: none; 
+                    }
+            
+                    .custom-link:hover {
+                        color: salmon;
+                    }
+            
+                    form.form-h {
+                        /* margin-left: 5%; */
+                        border: 3px solid slateblue;
+                        border-radius: 10px;
+                        padding: 15px;
+                        max-width: fit-content;
+                    }
+
+                    .merch {
+                        
+                        width: 50%;
+                        height: auto;
+                    }
+
+                </style>
+            
+                <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                // Masquer tous les contenus sauf le premier
+                var contenus = document.querySelectorAll(".contenu > div");
+                contenus[0].style.display = "block"; // Affiche le premier contenu
+            
+                // Ajouter des gestionnaires d'événements aux onglets
+                var onglets = document.querySelectorAll(".barre-navigation a");
+                onglets.forEach(function(onglet) {
+                    onglet.addEventListener("click", function(e) {
+                        e.preventDefault(); // Empêche le comportement par défaut du lien
+            
+                        // Masquer tous les contenus
+                        contenus.forEach(function(contenu) {
+                            contenu.style.display = "none";
+                        });
+            
+                        // Afficher uniquement le contenu de l'onglet actuel
+                        var idOnglet = this.getAttribute("href");
+                        document.querySelector(idOnglet).style.display = "block";
+                    });
+                });
+            });
+                </script>
+            
+            </head>
+            <body>
+                <div class="barre-navigation">
+                        <a href="#t-shirts">T-shirts</a>
+                        <a href="#sweats">Sweats</a>
+                        <a href="#bracelets">Bracelets</a>
+                        <a href="#boissons">Boissons</a>
+                </div>
+                
+                <div class="contenu">
+                    <div id="t-shirts">
+                        <img src="../assets/images/tickets/t-shirts_festival_01.jpeg" alt="t-shirt1" class="merch">
+                        <img src="../assets/images/tickets/t-shirts_festival_02.jpeg" alt="t-shirt2" class="merch">
+                    </div>
+                    
+                    <div id="sweats">
+                        <img src="../assets/images/tickets/sweats_festival_01.jpeg" alt="sweats1" class="merch">
+                        <img src="../assets/images/tickets/sweats_festival_02.jpeg" alt="sweats2" class="merch">
+                        <img src="../assets/images/tickets/sweats_festival_03.jpeg" alt="sweats3" class="merch">
+                        <img src="../assets/images/tickets/sweats_festival_04.jpeg" alt="sweats4" class="merch">
+                        <img src="../assets/images/tickets/sweats_festival_05.jpeg" alt="sweats5" class="merch">
+                    </div>
+                    
+                    <div id="bracelets">
+                        <img src="../assets/images/tickets/bracelet_festival_01.png" alt="bracelet1" class="merch">
+                        <img src="../assets/images/tickets/bracelet_festival_02.png" alt="bracelet2" class="merch">
+                    </div>
+                    
+                    <div id="boissons">
+                        <img src="../assets/images/tickets/boissons_festival_01.jpeg" alt="boisson1" class="merch">
+                        <img src="../assets/images/tickets/boissons_festival_02.jpeg" alt="boisson2" class="merch">
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <ul>
+                    <li>Av. de l'Astronomie 19, 1210 Saint-Josse-ten-Noode</li>
+                    <li>02 777 10 1099</li>
+                    <li><a href="mailto:rythmmix@info.be">RythmMix@info.be</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Festival</a></li>
+                        <li>
+                            <span class="opener">Line Up</span>
+                            <ul>
+                                <li><a href="line_up_day1.html">Jour 1</a></li>
+                                <li><a href="line_up_day2.html">Jour 2</a></li>
+                                <li><a href="line_up_day3.html">Jour 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Catégories</span>
+                            <ul>
+                                <li><a href="categorie_techno.html">Techno</a></li>
+                                <li><a href="categorie_rock.html">Rock</a></li>
+                                <li><a href="categorie_rap.html">Rap</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Billeterie</span>
+                            <ul>
+                                <li><a href="tickets_festival.html">Tickets Festival</a></li>
+                                <li><a href="tickets_camping.html">Pass Camping</a></li>
+                                <li><a href="tickets_transport.html">Ticket Transport</a></li>
+                                <li><a href="tickets_merch.html">Merchandise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Infos Pratiques</span>
+                            <ul>
+                                <li><a href="infos_plan.html">Plan</a></li>
+                                <li><a href="infos_faq.html">FAQ</a></li>
+                                <li><a href="infos_partenaires.html">Partenaires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Socials -->
+
+                <!-- Footer -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
-<!-- footer -->
+
 </html>
