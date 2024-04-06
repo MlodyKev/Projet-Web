@@ -1,126 +1,284 @@
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tickets transports</title>
-    <a href="../index.html" class="bouton-home"><img src="../images/logo.jpg" alt="logo"></a>
-    <link rel="stylesheet" href="../assets/style/style.css">
-    <!-- links -->
-</head>
-<body>
-
+    <title>Festival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
     <style>
-
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin-left: 7%;
-            margin-right: 7%;
-            position: relative;
+        ul.breadcrumb li {
+            display: inline;
         }
 
-        .bouton-home {
-            display: inline-block;
-            background-color: transparent;
-            border: none;
-            padding: 0;
+        ul.breadcrumb li+li:before {
+            /* Add a slash symbol (/) before/behind each list item */
+            padding: 5px;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: #0275d8;
+        }
+
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+
+        #header {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../assets/images/default_images/indexBackground.png');
+            width: 100%;
+            height: 30vh;
+            content: var(--tw-content);
+            transform: skewY(-2.2deg);
+            transform-origin: 0 0;
+        }
+
+        #header .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 0;
+            color: white;
+            font-size: 3.125em;
+        }
+
+        #imgLogo {
             width: 5%;
         }
 
-        .bouton-home img{
-            width: 100%;
-            height: auto;
+        #imgLogo:hover {
+            transform: scaleX(-1);
         }
 
-        .custom-link {
-            color: blue; 
-            text-decoration: none; 
+        footer ul {
+            display: flex;
+            justify-content: space-around;
         }
 
-        .custom-link:hover {
-            color: salmon;
+        footer ul li {
+            padding: 1em;
+            justify-content: space-around;
+            list-style-type: none;
         }
-
-        p.italic {
-            font-style: italic;
-            font-size: smaller;
-        }
-
-        #transport {
-            border: 2px solid salmon;
-            border-radius: 10px;
-            max-width: fit-content;
-            padding: 2px;
-        }
-
-        form.form-h {
-                margin-left: 5%;
-                border: 3px solid slateblue;
-                border-radius: 10px;
-                padding: 15px;
-                max-width: fit-content;
-            }
     </style>
-    <!-- logo -->
-    <!-- navbar -->
-    <!-- fil d'arianne -->
-    <h1>Tickets Transport</h1>
+</head>
 
-    <section id="plan">
-        <a href="infos_plan.html" class="custom-link">Emplacement du festival</a>
-    </section>
+<body class="is-preload">
 
-    <section id="train">
-        <p>Voyagez en toute tranquillité avec notre offre Ticket Festival + Ticket de Train. 
-            Profitez d'un accès facile et confortable au festival grâce à notre partenariat avec les compagnies ferroviaires locales. 
-            Ne manquez pas cette opportunité de vivre une expérience de festival sans tracas !</p>
-        <!-- lien google maps -->
-        <a href="https://www.belgiantrain.be/fr" class="custom-link">Voir le site officiel SNCB</a>
-    </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-    <hr>
+        <!-- Main -->
+        <div id="main">
 
-    <section id="bus">
-        <h2>Tickets + bus</h2>
-        <p>Profitez d'une expérience de festival sans souci avec notre offre exclusive Ticket Festival + Ticket de Bus. 
-        Cette offre combinée vous permet de profiter pleinement du festival tout en bénéficiant d'un transport pratique et sécurisé jusqu'au site. 
-        Réservez dès maintenant pour une escapade musicale inoubliable !</p>
+            <!-- Header -->
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
+                    <strong>RythmMix</strong> Festival
+                </a>
+            </header>
+            <div>
+                <ul class="breadcrumb">
+                    <li><a href="../pages/default.html">Accueil</a></li>
+                </ul>
+            </div>
 
-        <div id="transport">
-            <a href="https://www.stib-mivb.be/index.htm?l=fr" class="custom-link">STIB</a>
-            <a href="https://www.delijn.be/fr/" class="custom-link">De Lijn</a>
-            <a href="https://www.letec.be/" class="custom-link">TEC</a>
+            <!-- Inner -->
+            <div class="inner">
+
+                <!-- CONTENU -->
+                <style>
+
+                    body {
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        margin-left: 7%;
+                        margin-right: 7%;
+                        position: relative;
+                    }
+            
+                    .bouton-home {
+                        display: inline-block;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        width: 5%;
+                    }
+            
+                    .bouton-home img{
+                        width: 100%;
+                        height: auto;
+                    }
+            
+                    .custom-link {
+                        color: blue; 
+                        text-decoration: none; 
+                    }
+            
+                    .custom-link:hover {
+                        color: salmon;
+                    }
+            
+                    p.italic {
+                        font-style: italic;
+                        font-size: smaller;
+                    }
+            
+                    #transport {
+                        border: 2px solid salmon;
+                        border-radius: 10px;
+                        max-width: fit-content;
+                        padding: 2px;
+                    }
+            
+                    form.form-h {
+                            margin-left: 5%;
+                            border: 3px solid slateblue;
+                            border-radius: 10px;
+                            padding: 15px;
+                            max-width: 50%;
+                        }
+                </style>
+                <!-- logo -->
+                <!-- navbar -->
+                <!-- fil d'arianne -->
+                <h1>Tickets Transport</h1>
+            
+                <section id="plan">
+                    <a href="infos_plan.html" class="custom-link">Emplacement du festival</a>
+                </section>
+            
+                <section id="train">
+                    <p>Voyagez en toute tranquillité avec notre offre Ticket Festival + Ticket de Train. 
+                        Profitez d'un accès facile et confortable au festival grâce à notre partenariat avec les compagnies ferroviaires locales. 
+                        Ne manquez pas cette opportunité de vivre une expérience de festival sans tracas !</p>
+                    <!-- lien google maps -->
+                    <a href="https://www.belgiantrain.be/fr" class="custom-link">Voir le site officiel SNCB</a>
+                </section>
+            
+                <hr>
+            
+                <section id="bus">
+                    <h2>Tickets + bus</h2>
+                    <p>Profitez d'une expérience de festival sans souci avec notre offre exclusive Ticket Festival + Ticket de Bus. 
+                    Cette offre combinée vous permet de profiter pleinement du festival tout en bénéficiant d'un transport pratique et sécurisé jusqu'au site. 
+                    Réservez dès maintenant pour une escapade musicale inoubliable !</p>
+            
+                    <div id="transport">
+                        <a href="https://www.stib-mivb.be/index.htm?l=fr" class="custom-link">STIB</a>
+                        <a href="https://www.delijn.be/fr/" class="custom-link">De Lijn</a>
+                        <a href="https://www.letec.be/" class="custom-link">TEC</a>
+                    </div>
+            
+                    <hr>
+                    
+                </section>
+            
+                <section id="navette">
+                    <p>
+                        Exclusivement pour les détenteurs du <a href="tickets_festival.html#Tickets-deluxe"><strong>Ticket Deluxe</strong></a>, notre offre spéciale inclut non seulement l'accès au festival, mais également la possibilité de faire venir une navette vous chercher chez vous. 
+                        Détendez-vous dès le départ avec ce service de transport VIP, réservé aux amateurs de confort et de commodité.
+                    </p>
+                    
+                    <p class="italic">
+                        Le voyage en navette doit obligatoirement se faire réserver à part, lors du paiement, on vous demandera d'insérer le code au dos de votre
+                        ticket deluxe.
+                    </p>
+            
+                    <form class="form-h">
+                        <label for="nom">Nom : </label>
+                        <input type="text" name="nom" id="nom" placeholder="Nom">
+                        <label for="prénom">Prénom : </label>
+                        <input type="text" name="prénom" id="prénom" placeholder="Prénom">
+                        <label for="date">Date : </label>
+                        <input type="date" name="date" id="date" value="2024-04-10" min="2024-04-11"> <br>
+                        <input class="button" type="button" value="Réserver">
+                    </form>
+                    
+                    <p>Plus d'informations <a href="tickets_festival.html" class="custom-link">ici</a></p>
+                </section>
+                
+                <hr>
+
+            </div>
+            <footer id="footer">
+                <ul>
+                    <li>Av. de l'Astronomie 19, 1210 Saint-Josse-ten-Noode</li>
+                    <li>02 777 10 1099</li>
+                    <li><a href="mailto:rythmmix@info.be">RythmMix@info.be</a></li>
+                </ul>
+            </footer>
         </div>
 
-        <hr>
-        
-    </section>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
 
-    <section id="navette">
-        <p>
-            Exclusivement pour les détenteurs du Ticket Deluxe, notre offre spéciale inclut non seulement l'accès au festival, mais également la possibilité de faire venir une navette vous chercher chez vous. 
-            Détendez-vous dès le départ avec ce service de transport VIP, réservé aux amateurs de confort et de commodité.
-        </p>
-        
-        <p class="italic">
-            Le voyage en navette doit obligatoirement se faire réserver à part, lors du paiement, on vous demandera d'insérer le code au dos de votre
-            ticket deluxe.
-        </p>
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Festival</a></li>
+                        <li>
+                            <span class="opener">Line Up</span>
+                            <ul>
+                                <li><a href="line_up_day1.html">Jour 1</a></li>
+                                <li><a href="line_up_day2.html">Jour 2</a></li>
+                                <li><a href="line_up_day3.html">Jour 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Catégories</span>
+                            <ul>
+                                <li><a href="categorie_techno.html">Techno</a></li>
+                                <li><a href="categorie_rock.html">Rock</a></li>
+                                <li><a href="categorie_rap.html">Rap</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Billeterie</span>
+                            <ul>
+                                <li><a href="tickets_festival.html">Tickets Festival</a></li>
+                                <li><a href="tickets_camping.html">Pass Camping</a></li>
+                                <li><a href="tickets_transport.html">Ticket Transport</a></li>
+                                <li><a href="tickets_merch.html">Merchandise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Infos Pratiques</span>
+                            <ul>
+                                <li><a href="infos_plan.html">Plan</a></li>
+                                <li><a href="infos_faq.html">FAQ</a></li>
+                                <li><a href="infos_partenaires.html">Partenaires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
 
-        <form class="form-h">
-            <label for="nom">Nom : </label>
-            <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
-            <label for="prénom">Prénom : </label>
-            <input type="text" name="prénom" id="prénom" placeholder="Prénom"> <br>
-            <label for="date">Date : </label>
-            <input type="date" name="date" id="date" value="2024-04-10" min="2024-04-11"> <br>
-            <input class="button" type="button" value="Réserver">
-        </form>
-        
-        <p>Plus d'informations <a href="tickets_festival.html" class="custom-link">ici</a></p>
-    </section>
-    
-    <hr>
+                <!-- Socials -->
 
+                <!-- Footer -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
-<!-- footer -->
+
 </html>

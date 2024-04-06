@@ -1,158 +1,308 @@
+<!DOCTYPE HTML>
 <html lang="fr">
-    
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="tickets" content="width=device-width, initial-scale=1.0">
-    <title>Tickets Festival</title>
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Festival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
+    <style>
+        ul.breadcrumb li {
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before {
+            /* Add a slash symbol (/) before/behind each list item */
+            padding: 5px;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: #0275d8;
+        }
+
+        ul.breadcrumb li a:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+
+        #header {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../assets/images/default_images/indexBackground.png');
+            width: 100%;
+            height: 30vh;
+            content: var(--tw-content);
+            transform: skewY(-2.2deg);
+            transform-origin: 0 0;
+        }
+
+        #header .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 0;
+            color: white;
+            font-size: 3.125em;
+        }
+
+        #imgLogo {
+            width: 5%;
+        }
+
+        #imgLogo:hover {
+            transform: scaleX(-1);
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer ul li {
+            padding: 1em;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+    </style>
 </head>
 
-<a href="../index.html" class="bouton-home"><img src="../images/logo.jpg" alt="logo"></a>
-<body>
-    
-    <div class="background">
-        <style>
-            div.background {
-                background-image: url(../images/background.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 100%;
-            }
+<body class="is-preload">
 
-            body {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin-left: 7%;
-                margin-right: 7%;
-                position: relative;
-            }
-            p.content {
-                margin: 20px;
-            }
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-            .bouton-home {
-                display: inline-block;
-                background-color: transparent;
-                border: none;
-                padding: 0;
-                width: 5%;
-            }
+        <!-- Main -->
+        <div id="main">
 
-            .bouton-home img{
-                width: 100%;
-                height: auto;
-            }
+            <!-- Header -->
+            <header id="header">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
+                    <strong>RythmMix</strong> Festival
+                </a>
+            </header>
+            <div>
+                <ul class="breadcrumb">
+                    <li><a href="../pages/default.html">Accueil</a></li>
+                </ul>
+            </div>
 
-            .custom-link {
-                color: blue; 
-                text-decoration: none; 
-            }
+            <!-- Inner -->
+            <div class="inner">
 
-            .custom-link:hover {
-                color: salmon;
-            }
-
-            form.parking {
-                margin-left: 5%;
-                border: 3px solid slateblue;
-                border-radius: 10px;
-                padding: 15px;
-                max-width: fit-content;
-            }
-        </style>
-    </div>
-    
-    <!-- navbar -->
-    <!-- fil d'arianne -->
-    <div id="tickets-festival-content">
-        <h1>Tickets Festival</h1>
-        <p><strong>Assurez-vous de ne rien manquer ! Obtenez votre billet pour le festival maintenant !</strong></p>
+                <!-- CONTENU -->
+                
+                <style>
+                    
+                    body {
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        margin-left: 7%;
+                        margin-right: 7%;
+                        position: relative;
+                    }
+                    p.content {
+                        margin: 20px;
+                    }
         
-        <section id="Regular-tickets">
-            <!-- contenu : prix et détails -->
-            <h2>Tickets Regular</h1>
-            <p>
-                Le ticket regular est valide pour la durée d'une journée au choix. Le ticket est au prix de 54 €
-                ; il comprend les frais de services et l'accès au concert pour la journée choisie. <br>
-                Si vous êtes un aventurier et avez un amour pour la nature, le <strong>pass camping</strong> 
-                est fait pour vous !!
-            </p>
+                    .bouton-home {
+                        display: inline-block;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        width: 5%;
+                    }
+        
+                    .bouton-home img{
+                        width: 100%;
+                        height: auto;
+                    }
+        
+                    .custom-link {
+                        color: blue; 
+                        text-decoration: none; 
+                    }
+        
+                    .custom-link:hover {
+                        color: salmon;
+                    }
+        
+                    form.form-h {
+                        margin-left: 5%;
+                        border: 3px solid slateblue;
+                        border-radius: 10px;
+                        padding: 15px;
+                        max-width: fit-content;
+                    }
+                </style>
+                
+                
+                <!-- navbar -->
+                <!-- fil d'arianne -->
+                <div id="tickets-festival-content">
+                    <h1>Tickets Festival</h1>
+                    <p><strong>Assurez-vous de ne rien manquer ! Obtenez votre billet pour le festival maintenant !</strong></p>
+                    
+                    <section id="Regular-tickets">
+                        <!-- contenu : prix et détails -->
+                        <h2>Tickets Regular</h1>
+                        <p>
+                            Le ticket regular est valide pour la durée d'une journée au choix. Le ticket est au prix de 54 €
+                            ; il comprend les frais de services et l'accès au concert pour la journée choisie. <br>
+                            Si vous êtes un aventurier et avez un amour pour la nature, le <a href="tickets_camping.html" class="custom-link"><strong>pass camping</strong> </a>
+                            est fait pour vous !!
+                        </p>
+            
+                        <img src="#" alt="#">
+            
+                    </section>
+                    <hr>
+            
+                    <section id="Parking-tickets">
+                        <h2>Tickets Parking</h2>
+                        <p>
+                            Ne vous prenez pas la tête à chercher une place de parking, le jour venu. Vous ne devez venir que 
+                            pour l'amusement du concert. C'est pour cela que nous mettons à disposition notre parking de 
+                            300 places. <br> Dépêchez vous de réserver votre place !
+                        </p>
+            
+                        <!-- formulaire de réservation du parking -->
+                        <form class="form-h">
+                            <label for="nom">Nom : </label>
+                            <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
+                            <label for="prénom">Prénom : </label>
+                            <input type="text" name="prénom" id="prénom" placeholder="Prénom"> <br>
+                            <label for="date">Date : </label>
+                            <input type="date" name="date" id="date" value="2024-04-10" min="2024-04-11"> <br>
+                            <input class="button" type="button" value="Réserver">
+                        </form>
+                        <!-- image du parking -->
+                        <img src="../assets/images/tickets/parking.jpg" alt="Parking" >
+                        <!-- href vers le plan ? -->
+                        <a href="infos_plan.html" class="custom-link">Pour plus de détails sur le plan</a>
+                    </section>
+            
+                    <hr>
+            
+                    <section id="Pass-3j">
+                        <h2>Pass 3 jours</h2>
+                        <!-- contenu: prix et détails -->
+                        <p>
+                            Trois jours. Trois styles de musique. Une expérience inoubliable. <br>
+                            Levez-vous et laissez-vous emporter par le rythme vibrant du festival! 
+                            Trois jours de musique, de passion et d'énergie pure vous attendent. 
+                            Que vous soyez un fan de techno, de rap, de rock ou simplement un amoureux de la musique, 
+                            ce festival est fait pour vous.
+                        </p>
+                        <p>
+                            Avec notre billet spécial pour les trois jours, 
+                            vous ne manquerez aucune des performances incroyables qui vous attendent. 
+                            Vivez l'excitation, ressentez la passion et rejoignez-nous pour une aventure musicale que vous n'oublierez jamais.
+                        </p>
+                        <!-- image -->
+                        <!-- href vers la page "tickets_camping" -->
+                    </section>
+            
+                    <hr>
+            
+                    <section id="Tickets-deluxe">
+                        <!-- contenu: prix et détails, rencontre avec un artiste -->
+                        <h2>Billet Deluxe</h2>
+                        <p>🌟 Billets Deluxe en Vente ! Ne manquez pas cette opportunité exclusive de vivre le festival dans le luxe ultime. Avec notre billet Deluxe, vous obtenez bien plus qu'un simple accès aux trois jours de concerts. <br>
+                            ✨ Voici ce qui vous attend avec le Billet Deluxe :
+                            <p class="content">
+                                🎵 Accès aux 3 Jours de Concerts : Vibrez au rythme de la musique pendant trois jours consécutifs, avec des performances inoubliables qui vous feront danser jusqu'au bout de la nuit. <br>
+                                🚗 Place de Parking Réservée : Garez-vous en toute tranquillité à proximité de l'entrée principale, sans avoir à vous soucier de chercher une place. <br>
+                                🚌 Transport Aller-Retour Inclus : Voyagez en toute sérénité grâce à notre service de transport aller-retour, assurant votre arrivée et votre retour en toute sécurité. <br>
+                                🍽️ Nourriture et Boissons Incluses : Régalez-vous avec une variété de délices culinaires et de boissons rafraîchissantes tout au long de la journée, sans frais supplémentaires. <br>
+                                🎤 Rencontres avec un Artiste au Choix : Obtenez jusqu'à deux rencontres privilégiées avec un artiste de votre choix parmi notre incroyable lineup. C'est l'occasion idéale de rencontrer vos idoles et de repartir avec des souvenirs inoubliables. <br>
+                                💫 Réservez dès maintenant votre Billet Deluxe et préparez-vous à une expérience de festival comme aucune autre. Quantités limitées disponibles, alors ne tardez pas ! <br>
+                                📅 Dates du Festival : <a href="line_up_day1.html" class="custom-link">Programme</a> <br>
+                                Rejoignez-nous pour une expérience musicale inoubliable, avec tout le luxe et le confort dont vous avez besoin pour profiter pleinement de chaque instant. Réservez votre Billet Deluxe dès aujourd'hui !
+                            </p>
+                        </p>
+            
+                        <hr>
+                        <!-- image -->
+                        <!-- href vers la page "categorie" ou "line-up" -->
+                    </section>
+                </div>
 
-            <img src="#" alt="#">
+            </div>
+            <footer id="footer">
+                <ul>
+                    <li>Av. de l'Astronomie 19, 1210 Saint-Josse-ten-Noode</li>
+                    <li>02 777 10 1099</li>
+                    <li><a href="mailto:rythmmix@info.be">RythmMix@info.be</a></li>
+                </ul>
+            </footer>
+        </div>
 
-        </section>
-        <hr>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
 
-        <section id="Parking-tickets">
-            <h2>Tickets Parking</h2>
-            <p>
-                Ne vous prenez pas la tête à chercher une place de parking, le jour venu. Vous ne devez venir que 
-                pour l'amusement du concert. C'est pour cela que nous mettons à disposition notre parking de 
-                300 places. <br> Dépêchez vous de réserver votre place !
-            </p>
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Festival</a></li>
+                        <li>
+                            <span class="opener">Line Up</span>
+                            <ul>
+                                <li><a href="line_up_day1.html">Jour 1</a></li>
+                                <li><a href="line_up_day2.html">Jour 2</a></li>
+                                <li><a href="line_up_day3.html">Jour 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Catégories</span>
+                            <ul>
+                                <li><a href="categorie_techno.html">Techno</a></li>
+                                <li><a href="categorie_rock.html">Rock</a></li>
+                                <li><a href="categorie_rap.html">Rap</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Billeterie</span>
+                            <ul>
+                                <li><a href="tickets_festival.html">Tickets Festival</a></li>
+                                <li><a href="tickets_camping.html">Pass Camping</a></li>
+                                <li><a href="tickets_transport.html">Ticket Transport</a></li>
+                                <li><a href="tickets_merch.html">Merchandise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Infos Pratiques</span>
+                            <ul>
+                                <li><a href="infos_plan.html">Plan</a></li>
+                                <li><a href="infos_faq.html">FAQ</a></li>
+                                <li><a href="infos_partenaires.html">Partenaires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
 
-            <!-- formulaire de réservation du parking -->
-            <form class="parking">
-                <label for="nom">Nom : </label>
-                <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
-                <label for="prénom">Prénom : </label>
-                <input type="text" name="prénom" id="prénom" placeholder="Prénom"> <br>
-                <label for="date">Date : </label>
-                <input type="date" name="date" id="date" value="2024-04-10" min="2024-04-11"> <br>
-                <input class="button" type="button" value="Réserver">
-            </form>
-            <!-- image du parking -->
-            <img src="../images/parking.jpg" alt="Parking" >
-            <!-- href vers le plan ? -->
-            <a href="infos_plan.html" class="custom-link">Pour plus de détails sur le plan</a>
-        </section>
+                <!-- Socials -->
 
-        <hr>
+                <!-- Footer -->
 
-        <section id="Pass-3j">
-            <h2>Pass 3 jours</h2>
-            <!-- contenu: prix et détails -->
-            <p>
-                Trois jours. Trois styles de musique. Une expérience inoubliable. <br>
-                Levez-vous et laissez-vous emporter par le rythme vibrant du festival! 
-                Trois jours de musique, de passion et d'énergie pure vous attendent. 
-                Que vous soyez un fan de techno, de rap, de rock ou simplement un amoureux de la musique, 
-                ce festival est fait pour vous.
-            </p>
-            <p>
-                Avec notre billet spécial pour les trois jours, 
-                vous ne manquerez aucune des performances incroyables qui vous attendent. 
-                Vivez l'excitation, ressentez la passion et rejoignez-nous pour une aventure musicale que vous n'oublierez jamais.
-            </p>
-            <!-- image -->
-            <!-- href vers la page "tickets_camping" -->
-        </section>
-
-        <hr>
-
-        <section id="Tickets-deluxe">
-            <!-- contenu: prix et détails, rencontre avec un artiste -->
-            <h2>Billet Deluxe</h2>
-            <p>🌟 Billets Deluxe en Vente ! Ne manquez pas cette opportunité exclusive de vivre le festival dans le luxe ultime. Avec notre billet Deluxe, vous obtenez bien plus qu'un simple accès aux trois jours de concerts. <br>
-                ✨ Voici ce qui vous attend avec le Billet Deluxe :
-                <p class="content">
-                    🎵 Accès aux 3 Jours de Concerts : Vibrez au rythme de la musique pendant trois jours consécutifs, avec des performances inoubliables qui vous feront danser jusqu'au bout de la nuit. <br>
-                    🚗 Place de Parking Réservée : Garez-vous en toute tranquillité à proximité de l'entrée principale, sans avoir à vous soucier de chercher une place. <br>
-                    🚌 Transport Aller-Retour Inclus : Voyagez en toute sérénité grâce à notre service de transport aller-retour, assurant votre arrivée et votre retour en toute sécurité. <br>
-                    🍽️ Nourriture et Boissons Incluses : Régalez-vous avec une variété de délices culinaires et de boissons rafraîchissantes tout au long de la journée, sans frais supplémentaires. <br>
-                    🎤 Rencontres avec un Artiste au Choix : Obtenez jusqu'à deux rencontres privilégiées avec un artiste de votre choix parmi notre incroyable lineup. C'est l'occasion idéale de rencontrer vos idoles et de repartir avec des souvenirs inoubliables. <br>
-                    💫 Réservez dès maintenant votre Billet Deluxe et préparez-vous à une expérience de festival comme aucune autre. Quantités limitées disponibles, alors ne tardez pas ! <br>
-                    📅 Dates du Festival : <a href="line_up_day1.html" class="custom-link">Programme</a> <br>
-                    Rejoignez-nous pour une expérience musicale inoubliable, avec tout le luxe et le confort dont vous avez besoin pour profiter pleinement de chaque instant. Réservez votre Billet Deluxe dès aujourd'hui !
-                </p>
-            </p>
-
-            <hr>
-            <!-- image -->
-            <!-- href vers la page "categorie" ou "line-up" -->
-        </section>
+            </div>
+        </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
-<!-- footer-->
+
 </html>
