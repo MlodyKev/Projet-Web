@@ -97,29 +97,15 @@
                 
                 <style>
                     
-                    body {
-                        font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        margin-left: 7%;
-                        margin-right: 7%;
-                        position: relative;
-                    }
                     p.content {
                         margin: 20px;
+                        margin-right: 10%;
                     }
-        
-                    .bouton-home {
-                        display: inline-block;
-                        background-color: transparent;
-                        border: none;
-                        padding: 0;
-                        width: 5%;
+
+                    p.content-deluxe {
+                        margin-left: 7%;
                     }
-        
-                    .bouton-home img{
-                        width: 100%;
-                        height: auto;
-                    }
-        
+
                     .custom-link {
                         color: blue; 
                         text-decoration: none; 
@@ -136,6 +122,14 @@
                         padding: 15px;
                         max-width: fit-content;
                     }
+
+                    form.form-h input[type="text"]{
+                        display: inline-block;
+                    }
+
+                    #ref {
+                        display:inline;
+                    }
                 </style>
                 
                 
@@ -148,7 +142,7 @@
                     <section id="Regular-tickets">
                         <!-- contenu : prix et détails -->
                         <h2>Tickets Regular</h1>
-                        <p>
+                        <p class="content">
                             Le ticket regular est valide pour la durée d'une journée au choix. Le ticket est au prix de 54 €
                             ; il comprend les frais de services et l'accès au concert pour la journée choisie. <br>
                             Si vous êtes un aventurier et avez un amour pour la nature, le <a href="tickets_camping.html" class="custom-link"><strong>pass camping</strong> </a>
@@ -162,7 +156,7 @@
             
                     <section id="Parking-tickets">
                         <h2>Tickets Parking</h2>
-                        <p>
+                        <p class="content">
                             Ne vous prenez pas la tête à chercher une place de parking, le jour venu. Vous ne devez venir que 
                             pour l'amusement du concert. C'est pour cela que nous mettons à disposition notre parking de 
                             300 places. <br> Dépêchez vous de réserver votre place !
@@ -171,17 +165,17 @@
                         <!-- formulaire de réservation du parking -->
                         <form class="form-h">
                             <label for="nom">Nom : </label>
-                            <input type="text" name="nom" id="nom" placeholder="Nom"> <br>
+                            <input type="text" name="nom" id="nom" placeholder="Nom"> 
                             <label for="prénom">Prénom : </label>
-                            <input type="text" name="prénom" id="prénom" placeholder="Prénom"> <br>
+                            <input type="text" name="prénom" id="prénom" placeholder="Prénom">
                             <label for="date">Date : </label>
-                            <input type="date" name="date" id="date" value="2024-04-10" min="2024-04-11"> <br>
+                            <input type="date" name="date" id="date" value="2024-04-10" min="2024-04-11">
                             <input class="button" type="button" value="Réserver">
                         </form>
                         <!-- image du parking -->
                         <img src="../assets/images/tickets/parking.jpg" alt="Parking" >
                         <!-- href vers le plan ? -->
-                        <a href="infos_plan.html" class="custom-link">Pour plus de détails sur le plan</a>
+                        <a href="infos_plan.html" class="custom-link" id="ref-h">Pour plus de détails sur le plan</a>
                     </section>
             
                     <hr>
@@ -189,14 +183,14 @@
                     <section id="Pass-3j">
                         <h2>Pass 3 jours</h2>
                         <!-- contenu: prix et détails -->
-                        <p>
+                        <p class="content">
                             Trois jours. Trois styles de musique. Une expérience inoubliable. <br>
                             Levez-vous et laissez-vous emporter par le rythme vibrant du festival! 
                             Trois jours de musique, de passion et d'énergie pure vous attendent. 
                             Que vous soyez un fan de techno, de rap, de rock ou simplement un amoureux de la musique, 
                             ce festival est fait pour vous.
                         </p>
-                        <p>
+                        <p class="content">
                             Avec notre billet spécial pour les trois jours, 
                             vous ne manquerez aucune des performances incroyables qui vous attendent. 
                             Vivez l'excitation, ressentez la passion et rejoignez-nous pour une aventure musicale que vous n'oublierez jamais.
@@ -210,9 +204,9 @@
                     <section id="Tickets-deluxe">
                         <!-- contenu: prix et détails, rencontre avec un artiste -->
                         <h2>Billet Deluxe</h2>
-                        <p>🌟 Billets Deluxe en Vente ! Ne manquez pas cette opportunité exclusive de vivre le festival dans le luxe ultime. Avec notre billet Deluxe, vous obtenez bien plus qu'un simple accès aux trois jours de concerts. <br>
+                        <p class="content">🌟 Billets Deluxe en Vente ! Ne manquez pas cette opportunité exclusive de vivre le festival dans le luxe ultime. Avec notre billet Deluxe, vous obtenez bien plus qu'un simple accès aux trois jours de concerts. <br>
                             ✨ Voici ce qui vous attend avec le Billet Deluxe :
-                            <p class="content">
+                            <p class="content-deluxe">
                                 🎵 Accès aux 3 Jours de Concerts : Vibrez au rythme de la musique pendant trois jours consécutifs, avec des performances inoubliables qui vous feront danser jusqu'au bout de la nuit. <br>
                                 🚗 Place de Parking Réservée : Garez-vous en toute tranquillité à proximité de l'entrée principale, sans avoir à vous soucier de chercher une place. <br>
                                 🚌 Transport Aller-Retour Inclus : Voyagez en toute sérénité grâce à notre service de transport aller-retour, assurant votre arrivée et votre retour en toute sécurité. <br>
