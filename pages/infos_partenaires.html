@@ -9,19 +9,26 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
     <style>
         /* Breadcrumb */
+        ul.breadcrumb {
+            margin: 0.7em;
+        }
         ul.breadcrumb li {
             display: inline;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
         }
         ul.breadcrumb li+li:before {
             padding: 5px;
             content: "/\00a0";
         }
         ul.breadcrumb li a {
-            color: #0275d8;
+            color: brown;
         }
         ul.breadcrumb li a:hover {
-            color: #01447e;
             text-decoration: underline;
+        }
+        a {
+            border-bottom: none;
         }
 
         /* Footer */
@@ -32,19 +39,21 @@
 
         footer ul li {
             padding: 1em;
-            justify-content: space-around;
             list-style-type: none;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
+            color: brown;
         }
 
         /* Socials */
         #socialMedia li {
-            list-style-type: none; 
-            display: inline-block; 
-            margin-right: 5px; 
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 5px;
         }
 
         #socialMedia svg {
-            width: 3em; 
+            width: 3em;
         }
     </style>
 </head>

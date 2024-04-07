@@ -2340,6 +2340,27 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+    /* FAQ */
+            .question {
+                cursor: pointer;
+            }
+            .answer {
+                display: none;
+            }
+            .arrow-down {
+                display: none;
+                color :#c73030;
+            }
+            .arrow-right {
+                color :#c73030;
+            }
+            .expanded .arrow-right {
+                display: none;
+            }
+            .expanded .arrow-down {
+                display: inline-block;
+            }
+            
 		/* Partners */
             .partners-container {
                 display: grid;

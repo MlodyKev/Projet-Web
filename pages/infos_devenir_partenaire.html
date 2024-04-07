@@ -8,50 +8,27 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
     <style>
-        /* Default page */
-        #header {
-            background-size: cover;
-            background-position: center;
-            background-image: url('../assets/images/default_images/indexBackground.png');
-            width: 100%;
-            height: 30vh;
-            content: var(--tw-content);
-            transform: skewY(-2.2deg);
-            transform-origin: 0 0;
-        }
-
-        #header .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            border-bottom: 0;
-            color: white;
-            font-size: 3.125em;
-        }
-
-        #imgLogo {
-            width: 5%;
-        }
-
-        #imgLogo:hover {
-            transform: scaleX(-1);
-        }
-
         /* Breadcrumb */
+        ul.breadcrumb {
+            margin: 0.7em;
+        }
         ul.breadcrumb li {
             display: inline;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
         }
         ul.breadcrumb li+li:before {
             padding: 5px;
             content: "/\00a0";
         }
         ul.breadcrumb li a {
-            color: #0275d8;
+            color: brown;
         }
         ul.breadcrumb li a:hover {
-            color: #01447e;
             text-decoration: underline;
+        }
+        a {
+            border-bottom: none;
         }
 
         /* Footer */
@@ -62,19 +39,21 @@
 
         footer ul li {
             padding: 1em;
-            justify-content: space-around;
             list-style-type: none;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
+            color: brown;
         }
 
         /* Socials */
         #socialMedia li {
-            list-style-type: none; 
-            display: inline-block; 
-            margin-right: 5px; 
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 5px;
         }
 
         #socialMedia svg {
-            width: 3em; 
+            width: 3em;
         }
     </style>
 </head>
