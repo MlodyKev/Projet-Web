@@ -38,19 +38,34 @@
             transform: scaleX(-1);
         }
 
+        a {
+            border-bottom: none;
+            /*removes bottom border of email and breandcrumb*/
+        }
+
         /* Breadcrumb */
+
+        ul.breadcrumb {
+            margin: 0.7em;
+        }
+
         ul.breadcrumb li {
             display: inline;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
         }
+
         ul.breadcrumb li+li:before {
             padding: 5px;
             content: "/\00a0";
+            /* Add a slash symbol (/) before/behind each list item */
         }
+
         ul.breadcrumb li a {
-            color: #0275d8;
+            color: brown;
         }
+
         ul.breadcrumb li a:hover {
-            color: #01447e;
             text-decoration: underline;
         }
 
@@ -62,19 +77,21 @@
 
         footer ul li {
             padding: 1em;
-            justify-content: space-around;
             list-style-type: none;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
+            color: brown;
         }
 
         /* Socials */
         #socialMedia li {
-            list-style-type: none; 
-            display: inline-block; 
-            margin-right: 5px; 
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 5px;
         }
 
         #socialMedia svg {
-            width: 3em; 
+            width: 3em;
         }
     </style>
 </head>
@@ -117,7 +134,7 @@
 
             </div>
             <footer id="footer">
-				<hr class="major" />
+                <hr class="major" />
                 <ul>
                     <li>Av. de l'Astronomie 19, 1210 Saint-Josse-ten-Noode</li>
                     <li>02 777 10 1099</li>
