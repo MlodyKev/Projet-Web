@@ -7,34 +7,6 @@
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="icon" type="image/x-icon" href="assets/images/default_images/favicon.ico">
 		<style>
-		/* Default page */
-        #header {
-			background-size: cover;
-				background-position: center; 
-				background-image: url('assets/images/default_images/indexBackground.png');
-				width: 100% ; 
-				height: 100vh;
-				content: var(--tw-content);
-        }
-
-        #header .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            border-bottom: 0;
-            color: white;
-            font-size: 5.125em;
-        }
-
-        #imgLogo {
-            width: 10%;
-        }
-
-        #imgLogo:hover {
-            transform: scaleX(-1);
-        }
-
         /* Breadcrumb */
         ul.breadcrumb li {
             display: inline;
@@ -85,8 +57,8 @@
 					<div id="main">
 
 						<!-- Header -->
-						<header id="header">
-							<a href="../index.html" class="logo">
+						<header id="indexHeader">
+							<a href="index.html" class="logo">
 								<img src="assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
 								<strong>RythmMix</strong> Festival
 								<img src="assets/images/default_images/imgLogo.png" alt="Logo" id="imgLogo">
@@ -110,9 +82,7 @@
 											<li><a href="pages/tickets_festival.html" class="button big">Tickets</a></li>
 										</ul>
 									</div>
-									<span class="image object">
-										<img src="assets/images/index/tickets.png" alt="">
-									</span>
+									<a class="image"><img src="assets/images/index/tickets.png" alt=""></a>
 								</section>
 
 								<!-- Actualités -->
@@ -122,7 +92,7 @@
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="assets/images/index/actu1.jpeg" alt="" /></a>
+											<a class="image"><img src="assets/images/index/actu1.jpeg" alt="" /></a>
 											<h3>Sheff G au RythmMix !</h3>
 											<p>30 mars 2024</p>
 											<p>Sheff G libéré de manière exceptionnelle pour se produire au festival ! La juge a apparemment un faible pour le rap, elle l'a laissé sortir juste pour notre événement. Profitez de son concert, car après, il retourne dans sa cellule !</p>
@@ -131,7 +101,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="assets/images/index/actu2.png" alt="" /></a>
+											<a class="image"><img src="assets/images/index/actu2.png" alt="" /></a>
 											<h3>Linkin Park et SOAD s'ajoutent à la Line Up.</h3>
 											<p>15 février 2024</p>
 											<p>Deux légendes du rock, Linkin Park et System Of A Down, rejoignent l'affiche ! Ça va sûrement attirer les fans de rock, même si, avouons-le, c'est un peu rétro. Mais bon, on aime bien faire plaisir à toutes les générations !</p>
@@ -140,7 +110,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="assets/images/index/actu3.png" alt="" /></a>
+											<a class="image"><img src="assets/images/index/actu3.png" alt="" /></a>
 											<h3>3 jours, 3 styles !</h3>
 											<p>1 décembre 2023</p>
 											<p>Changement majeur dans le programme : chaque jour du festival sera dédié à un style musical différent ! Du rap, de l'électro/techno et du rock/métal pour satisfaire tous les goûts !</p>
@@ -151,7 +121,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="assets/images/index/actu4.jpg" alt="" /></a>
+											<a class="image"><img src="assets/images/index/actu4.jpg" alt="" /></a>
 											<h3>Prix avantageux...</h3>
 											<p>15 octobre 2023</p>
 											<p>Les prix des billets ont chuté ! Avec une foule attendue plus nombreuse, on veut s'assurer que tout le monde puisse participer sans se ruiner.</p>
@@ -160,7 +130,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="assets/images/index/actu5.jpg" alt="" /></a>
+											<a class="image"><img src="assets/images/index/actu5.jpg" alt="" /></a>
 											<h3>Partenaires utiles.</h3>
 											<p>24 septembre 2023</p>
 											<p>La tec, la sncb et de lijn se joignent à nous cette année en tant que partenaires officiels ! Fini les tracas de transport, on aura même des <a href="pages/tickets_transport.html">billets spéciaux</a> vers le festival depuis les grandes villes belges !</p>
@@ -169,7 +139,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="assets/images/index/actu6.png" alt="" /></a>
+											<a class="image"><img src="assets/images/index/actu6.png" alt="" /></a>
 											<h3>Artistes mystères ???</h3>
 											<p>5 septembre 2023</p>
 											<p>Une scène surprise sera dévoilée chaque soir après les têtes d'affiche principales ! Attendez-vous à des performances spéciales d'artistes mystères pour prolonger la magie du festival jusqu'au bout de la nuit !</p>
@@ -210,47 +180,6 @@
 												<h3>Sed magna finibus</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
-										</article>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ipsum sed dolor</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt=""></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt=""></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt=""></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt=""></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
 										</article>
 									</div>
 								</section>
