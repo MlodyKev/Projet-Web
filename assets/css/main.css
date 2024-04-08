@@ -1000,7 +1000,6 @@ header p {
 header.major > :last-child {
   border-bottom: solid 3px #c73030;
   display: inline-block;
-  margin: 0 0 2em 0;
   padding: 0 0 0.5em 0;
  }
  
@@ -2424,6 +2423,12 @@ button,
         width: 3.3em; }
       #menu > ul#socialMedia li {
         border-top: 0px; } 
-      #menu > ul#socialMedia {
-        
-      }
+      
+    /* Banner Categories */
+    #bannerCategories {
+        flex-wrap: wrap;
+    }
+
+    #bannerCategories .image {
+        width: auto;
+        margin: 2em; }
