@@ -1353,7 +1353,11 @@ ul.icons {
       color: inherit; }
       ul.icons li .icon:before {
         font-size: 1.25em; }
-
+        .icon:hover{
+          -moz-transform: scale(1.175);
+          -webkit-transform: scale(1.175);
+          -ms-transform: scale(1.175);
+          transform: scale(1.175); }
 /* Contact */
 ul.contact {
   list-style: none;
