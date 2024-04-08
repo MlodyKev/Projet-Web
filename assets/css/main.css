@@ -1001,7 +1001,12 @@ header.major > :last-child {
   border-bottom: solid 3px #c73030;
   display: inline-block;
   margin: 0 0 2em 0;
-  padding: 0 0.75em 0.5em 0; }
+  padding: 0 0 0.5em 0;
+ }
+ 
+ header.major {
+  text-align: center;
+ }
 
 header.main > :last-child {
   margin: 0 0 1em 0; }
