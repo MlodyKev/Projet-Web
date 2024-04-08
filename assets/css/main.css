@@ -2424,11 +2424,28 @@ button,
       #menu > ul#socialMedia li {
         border-top: 0px; } 
       
-    /* Banner Categories */
-    #bannerCategories {
-        flex-wrap: wrap;
+    /* Only for categories pages*/
+    .rock #banner, .techno #banner, .rap #banner {
+      flex-wrap: wrap;
+      margin-top: -6em;
+    }
+    
+    .rock #banner, .techno #banner, .rap #banner {
+        width: auto;
+        margin: 2em; }
+
+    .rock #header {
+      background-image: url(../images/categories/rockBackground.jpg);
     }
 
-    #bannerCategories .image {
-        width: auto;
-        margin: 2em; }
+    .rap #header {
+      background-image: url(../images/categories/rapBackground.jpg);
+    }
+
+    .techno #header {
+      background-image: url(../images/categories/technoBackground.jpg);
+    }
+
+    .rock .content, .techno .content, .rap .content {
+      padding: 2em;
+  }
