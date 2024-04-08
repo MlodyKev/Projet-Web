@@ -95,31 +95,29 @@
             <div class="inner">
 
                 <!-- CONTENU -->
-                <h1>Merch</h1>
 
                 <style>
         
                     .barre-navigation {
-                        background-color: #881B1B; 
-                        padding: 10px; 
-                        max-width: 100%;
+                        display: flex;
+                        background-color: #881B1B;
+                        border-radius: 10px;
+                        justify-content: space-around;
+                        max-height: fit-content;
                     }
-            
-                    .barre-navigation a {
-                        color: white; 
-                        text-decoration: none; 
-                        padding: 10px 20px; 
-                        margin-right: 10px; 
-                        border-radius: 5px; 
-                        transition: background-color 0.3s ease; 
+
+                    .barre-navigation > div {
+                        margin: auto;
+                        padding: 4%;
+                        width: 25%;
                         font-size: larger;
-                        text-align: center;
-                        
                     }
-            
+
                     .barre-navigation a:hover {
-                        background-color: salmon; 
-                        color: #881B1B;
+                        background-color: salmon;
+                        color: white;
+                        border-radius: 10px;
+                        padding: 13%
                     }
             
                     .barre-navigation a.active {
@@ -134,24 +132,11 @@
                     .contenu > div {
                         display: none; 
                     }
-            
-                </style>
-            
-                <style>
 
                     p.content {
                         margin: 20px;
                     }
 
-                    .custom-link {
-                        color: blue; 
-                        text-decoration: none; 
-                    }
-            
-                    .custom-link:hover {
-                        color: salmon;
-                    }
-            
                     form.form-h {
                         /* margin-left: 5%; */
                         border: 3px solid slateblue;
@@ -166,43 +151,21 @@
                         height: auto;
                     }
 
+
                 </style>
-            
-                <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                // Masquer tous les contenus sauf le premier
-                var contenus = document.querySelectorAll(".contenu > div");
-                contenus[0].style.display = "block"; // Affiche le premier contenu
-            
-                // Ajouter des gestionnaires d'événements aux onglets
-                var onglets = document.querySelectorAll(".barre-navigation a");
-                onglets.forEach(function(onglet) {
-                    onglet.addEventListener("click", function(e) {
-                        e.preventDefault(); // Empêche le comportement par défaut du lien
-            
-                        // Masquer tous les contenus
-                        contenus.forEach(function(contenu) {
-                            contenu.style.display = "none";
-                        });
-            
-                        // Afficher uniquement le contenu de l'onglet actuel
-                        var idOnglet = this.getAttribute("href");
-                        document.querySelector(idOnglet).style.display = "block";
-                    });
-                });
-            });
-                </script>
             
             </head>
             <body>
-
-                <h1 class="main">Merch</h1>
+                
+                <header class="major">
+                    <h1 class="main">Merch</h1>
+                </header>
 
                 <div class="barre-navigation">
-                        <a href="#t-shirts">T-shirts</a>
-                        <a href="#sweats">Sweats</a>
-                        <a href="#bracelets">Bracelets</a>
-                        <a href="#boissons">Boissons</a>
+                        <div><a href="#t-shirts" class="onglet">T-shirts</a></div>
+                        <div><a href="#sweats" class="onglet">Sweats</a></div>
+                        <div><a href="#bracelets" class="onglet">Bracelets</a></div>
+                        <div><a href="#boissons" class="onglet">Boissons</a></div>
                 </div>
                 
                 <div class="contenu">
@@ -210,6 +173,10 @@
                         <img src="../assets/images/tickets/t-shirts_festival_01.jpeg" alt="t-shirt1" class="merch">
                         <img src="../assets/images/tickets/t-shirts_festival_02.jpeg" alt="t-shirt2" class="merch">
                     </div>
+
+                    <style>
+                        /* tableau */
+                    </style>
                     
                     <div id="sweats">
                         <img src="../assets/images/tickets/sweats_festival_01.jpeg" alt="sweats1" class="merch">
@@ -227,6 +194,7 @@
                     <div id="boissons">
                         <img src="../assets/images/tickets/boissons_festival_01.jpeg" alt="boisson1" class="merch">
                         <img src="../assets/images/tickets/boissons_festival_02.jpeg" alt="boisson2" class="merch">
+                        <img src="../assets/images/tickets/boissons_festival_03.jpeg" alt="boisson3" class="merch">
                     </div>
                 </div>
             </div>
@@ -302,6 +270,31 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Masquer tous les contenus sauf le premier
+        var contenus = document.querySelectorAll(".contenu > div");
+        contenus[0].style.display = "block"; // Affiche le premier contenu
+    
+        // Ajouter des gestionnaires d'événements aux onglets
+        var onglets = document.querySelectorAll(".barre-navigation a");
+        onglets.forEach(function(onglet) {
+            onglet.addEventListener("click", function(e) {
+                e.preventDefault(); // Empêche le comportement par défaut du lien
+    
+                // Masquer tous les contenus
+                contenus.forEach(function(contenu) {
+                    contenu.style.display = "none";
+                });
+    
+                // Afficher uniquement le contenu de l'onglet actuel
+                var idOnglet = this.getAttribute("href");
+                document.querySelector(idOnglet).style.display = "block";
+            });
+        });
+    });
+    </script>
+    
 </body>
 
 </html>

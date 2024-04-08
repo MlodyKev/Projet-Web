@@ -7,66 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
-    <style>
-        ul.breadcrumb li {
-            display: inline;
-        }
-
-        ul.breadcrumb li+li:before {
-            /* Add a slash symbol (/) before/behind each list item */
-            padding: 5px;
-            content: "/\00a0";
-        }
-
-        ul.breadcrumb li a {
-            color: #0275d8;
-        }
-
-        ul.breadcrumb li a:hover {
-            color: #01447e;
-            text-decoration: underline;
-        }
-
-        #header {
-            background-size: cover;
-            background-position: center;
-            background-image: url('../assets/images/default_images/indexBackground.png');
-            width: 100%;
-            height: 30vh;
-            content: var(--tw-content);
-            transform: skewY(-2.2deg);
-            transform-origin: 0 0;
-        }
-
-        #header .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            border-bottom: 0;
-            color: white;
-            font-size: 3.125em;
-        }
-
-        #imgLogo {
-            width: 5%;
-        }
-
-        #imgLogo:hover {
-            transform: scaleX(-1);
-        }
-
-        footer ul {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        footer ul li {
-            padding: 1em;
-            justify-content: space-around;
-            list-style-type: none;
-        }
-    </style>
 </head>
 
 <body class="is-preload">
@@ -96,53 +36,36 @@
 
                 <!-- CONTENU -->
                 <style>
-
-            
-                    .custom-link {
-                        color: blue; 
-                        text-decoration: none; 
-                    }
-            
-                    .custom-link:hover {
-                        color: salmon;
-                    }
             
                     p.italic {
                         font-style: italic;
                         font-size: smaller;
                     }
             
-                    #transport {
-                        border: 2px solid salmon;
-                        border-radius: 10px;
-                        max-width: fit-content;
-                        padding: 2px;
-                    }
-            
                     form.form-h {
-                            margin-left: 5%;
-                            border: 3px solid slateblue;
-                            border-radius: 10px;
-                            padding: 15px;
-                            max-width: 50%;
-                        }
+                        margin-left: 5%;
+                        border: 3px solid slateblue;
+                        border-radius: 10px;
+                        padding: 15px;
+                        max-width: 50%;
+                    }
                 </style>
 
-                <h1 class="main">Tickets Transport</h1>
-            
-                <section id="plan">
-                    <a href="infos_plan.html" class="custom-link">Emplacement du festival</a>
-                </section>
+                <header class="major">
+                    <h1 class="main">Tickets Transport</h1>
+                </header>
             
                 <section id="train">
-                    <p>Voyagez en toute tranquillité avec notre offre Ticket Festival + Ticket de Train. 
-                        Profitez d'un accès facile et confortable au festival grâce à notre partenariat avec les compagnies ferroviaires locales. 
-                        Ne manquez pas cette opportunité de vivre une expérience de festival sans tracas !</p>
+                    <p>
+                    Voyagez en toute tranquillité avec notre offre Ticket Festival + Ticket de Train. 
+                    Profitez d'un accès facile et confortable au festival grâce à notre partenariat avec les compagnies ferroviaires locales. 
+                    Ne manquez pas cette opportunité de vivre une expérience de festival sans tracas !
+                    </p>
                     <!-- lien google maps -->
-                    <a href="https://www.belgiantrain.be/fr" class="custom-link">Voir le site officiel SNCB</a>
+                    <a href="https://www.belgiantrain.be/fr">Voir le site officiel SNCB</a>
                 </section>
             
-                <hr class="major">
+                
             
                 <section id="bus">
                     <h2>Tickets + bus</h2>
@@ -151,12 +74,19 @@
                     Réservez dès maintenant pour une escapade musicale inoubliable !</p>
             
                     <div id="transport">
-                        <a href="https://www.stib-mivb.be/index.htm?l=fr" class="custom-link">STIB</a>
-                        <a href="https://www.delijn.be/fr/" class="custom-link">De Lijn</a>
-                        <a href="https://www.letec.be/" class="custom-link">TEC</a>
+                        <ul>
+                            <li>
+                                <a href="https://www.stib-mivb.be/index.htm?l=fr"><strong>STIB</strong></a>
+                            </li>
+                            <li>
+                                <a href="https://www.delijn.be/fr/"><strong>De Lijn</strong></a>
+                            </li>
+                            <li>
+                                <a href="https://www.letec.be/"><strong>TEC</strong></a>
+                            </li>
+                        </ul>
                     </div>
             
-                    <hr class="major">
                     
                 </section>
             
@@ -181,13 +111,18 @@
                         <input class="button" type="button" value="Réserver">
                     </form>
                     
-                    <p>Plus d'informations <a href="tickets_festival.html" class="custom-link">ici</a></p>
+                    <p>Plus d'informations sur le ticket Deluxe <a href="tickets_festival.html">ici</a></p>
                 </section>
                 
-                <hr class="major">
+                <section id="plan">
+                    <p>
+                        Vous pouvez trouver l'emplacement exact du festival à sa <a href="infos_plan.html">page dédiée</a>
+                    </p>
+                </section>
 
             </div>
             <footer id="footer">
+                <hr class="major" />
                 <ul>
                     <li>Av. de l'Astronomie 19, 1210 Saint-Josse-ten-Noode</li>
                     <li>02 777 10 1099</li>
@@ -241,14 +176,54 @@
                             </ul>
                         </li>
                         <li><a href="jobs.html">Jobs</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                    <!-- Social media -->
+                    <ul id="socialMedia">
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                                    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                                    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                    <path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                                    <path d="M12,2C6,2,6,8,6,8v1c0,0-0.023-0.001-0.063-0.001C5.597,8.999,4,9.069,4,10.395C4,11.94,5.697,12,5.965,12 C5.988,12,6,12,6,12c0,1-1.652,2.171-2.736,2.442c-1.01,0.392-1.251,1.061-1.264,1.568c-0.008,0.303,0.066,0.548,0.106,0.643 c0.377,0.885,1.497,1.342,2.594,1.342C4.738,19.434,5.776,20,6.471,20c0.794,0,1.634-0.388,1.634-0.388C8.146,19.646,9.425,21,12,21 s3.854-1.354,3.896-1.388c0,0,0.839,0.388,1.634,0.388c0.695,0,1.732-0.566,1.77-2.005c1.097,0,2.217-0.457,2.594-1.342 c0.04-0.095,0.114-0.34,0.106-0.643c-0.013-0.507-0.254-1.176-1.264-1.568C19.652,14.171,18,13,18,12c0,0,0.012,0,0.035,0 C18.303,12,20,11.94,20,10.395c0-1.326-1.597-1.396-1.937-1.396C18.023,8.999,18,9,18,9V8C18,8,18,2,12,2L12,2z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                                    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                    <path d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-
-                <!-- Socials -->
-
-                <!-- Footer -->
-
             </div>
         </div>
     </div>
