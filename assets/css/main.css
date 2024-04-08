@@ -2513,3 +2513,14 @@ button,
   margin-top: 10px;
 }
 
+/* plan.html */
+.google-map iframe {
+  width: 30%;
+  height: auto; 
+  aspect-ratio: 16 / 9; }
+#plan h2:first-of-type{
+  margin-top: 50px; }
+#plan p:first-of-type{
+  font-size: 110%;
+  margin-top: 40px;
+  margin-bottom: 10px; }
