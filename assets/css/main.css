@@ -2417,10 +2417,13 @@ button,
 
       /* Socials */
       #socialMedia li {
-          list-style-type: none;
-          display: inline-block;
-          margin-right: 5px; }
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 5px; }
       #socialMedia svg {
-          width: 3em; }
-      #menu > ul#socialMedia > li {
-        border-top: solid 0px; } 
+        width: 3.3em; }
+      #menu > ul#socialMedia li {
+        border-top: 0px; } 
+      #menu > ul#socialMedia {
+        
+      }
