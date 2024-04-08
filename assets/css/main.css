@@ -2421,12 +2421,11 @@ button,
 #socialMedia li a {
   padding: 0em 0em; }
 #socialMedia svg {
-  width: 3.3em; }
-#menu ul#socialMedia li {
-  border-top: 0px; } 
-ul#socialMedia {
-  padding-left: 5px;
-  padding-top: 20px;}
+  width: 2.9em; }
+#socialMedia {
+  margin-top: 50px;}
+ 
+
       
     /* Only for categories pages*/
     .rock #banner, .techno #banner, .rap #banner {
@@ -2453,3 +2452,48 @@ ul#socialMedia {
     .rock .content, .techno .content, .rap .content {
       padding: 2em;
   }
+
+
+  /* jobs.html */
+.jobs .tel, .jobs .mail {
+  display: inline-block;
+  padding-right: 14px; }
+.jobs .mail {
+  font-size: 30px;}
+.jobs li {
+  list-style-type: none; }
+.jobs a[href] {
+  color: black; }
+.jobs th {
+  background-color: #f45c5c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em; }
+.jobs h2 {
+  padding-top: 50px; }
+.jobs table {
+  border: 5px solid #c73030;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px; }
+.jobs table{
+  color: black; }
+.jobs tbody tr:nth-child(even) {
+  background-color: white; }
+.jobs tbody tr:nth-child(odd) {
+  background-color: #9fa3a6; }
+.jobs td:nth-child(1), .jobs td:nth-child(2){
+  border-right: 1px solid black; }
+.jobs th:nth-child(3), .jobs td:nth-child(3){
+  text-align: right; }
+.jobs th:nth-child(1), .jobs td:nth-child(1){
+  width: 15%; }
+.jobs th:nth-child(1), .jobs td:nth-child(1){
+  width: 15%;}
+.jobs th:nth-child(2), .jobs td:nth-child(2){
+  width: 70%;}
+.jobs th:nth-child(3), .jobs td:nth-child(3){
+  width: 15%;}
+.jobs .contact{
+  margin-left: 90px;}
+
