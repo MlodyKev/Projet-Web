@@ -2404,7 +2404,7 @@ button,
       font-size: 0.9em; }
       #footer .copyright a {
         color: inherit; }
-        footer ul {
+        footer ul:not(#socialMedia ul) {
           display: flex;
           justify-content: space-around;
           font-family: "Roboto Slab", serif;
@@ -2416,19 +2416,13 @@ button,
 
 /* Socials */
 #socialMedia li {
-  list-style-type: none;
-  display: inline-block; }
-#socialMedia li a {
-  padding: 0em 0em; }
+  display: inline-block; 
+  padding: 0 0;}
 #socialMedia svg {
-  width: 3.3em; }
-#menu ul#socialMedia li {
-  border-top: 0px; } 
-ul#socialMedia {
-  padding-left: 5px;
-  padding-top: 20px;}
- 
-
+  width: 3em; }
+#socialMedia {
+  text-align: center;
+}
       
     /* Only for categories pages*/
     .rock #banner, .techno #banner, .rap #banner {
@@ -2499,7 +2493,6 @@ ul#socialMedia {
   width: 15%;}
 .jobs .contact{
   margin-left: 90px;}
-
 
 /* newsletter.html */
 #newsletter {
