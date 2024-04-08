@@ -2430,7 +2430,7 @@ button,
       margin-top: -6em;
     }
     
-    .rock #banner, .techno #banner, .rap #banner {
+    .rock #banner .image, .techno #banner .image, .rap #banner .image {
         width: auto;
         margin: 2em; }
 
