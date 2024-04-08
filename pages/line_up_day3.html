@@ -2,12 +2,40 @@
 <html lang="fr">
 
 <head>
-    <title>Festival</title>
+    <title>Line_up_Jour_3</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/default_images/favicon.ico">
     <style>
+        /* Breadcrumb */
+        ul.breadcrumb {
+            margin: 0.7em;
+        }
+
+        ul.breadcrumb li {
+            display: inline;
+            font-family: "Roboto Slab", serif;
+            letter-spacing: 0.075em;
+        }
+
+        ul.breadcrumb li+li:before {
+            padding: 5px;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: brown;
+        }
+
+        ul.breadcrumb li a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            border-bottom: none;
+        }
+
         #header {
             background-size: cover;
             background-position: center;
@@ -54,6 +82,15 @@
                     <strong>RythmMix</strong> Festival
                 </a>
             </header>
+            <!-- Breadcrumb-->
+            <div>
+                <ul class="breadcrumb">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../pages/line_up_day1.html">Line-Up Jour 1</a></li>
+                    <li><a href="../pages/line_up_day2.html">Line-Up Jour 2</a></li>
+                    <li><a href="../pages/line_up_day3.html">Line-Up Jour 3</a></li>
+                </ul>
+            </div>
 
             <!-- Inner -->
             <div class="inner">
@@ -61,7 +98,9 @@
                 <!-- CONTENU -->
                 <section>
                     <header class="major">
-                        <h2>ROCK / METAL</h2>
+                        <h1 class="main">LINE-UP</h1>
+                        <h1 class="main">JOUR 3</h1>
+                        <h2 id="content">ROCK / METAL</h2>
                     </header>
                     <div class="posts">
                         <article>
