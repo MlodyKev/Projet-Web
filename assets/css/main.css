@@ -2512,12 +2512,14 @@ ul.breadcrumb {
   width: 30%;
   height: auto; 
   aspect-ratio: 16 / 9; }
-#plan h2:first-of-type{
-  margin-top: 50px; }
-#plan p:first-of-type{
-  font-size: 110%;
-  margin-top: 40px;
-  margin-bottom: 10px; }
+#plan {
+  margin-bottom: 90px; }
+  #plan h2:first-of-type{
+    margin-top: 50px; }
+  #plan p:first-of-type{
+    font-size: 110%;
+    margin-top: 40px;
+    margin-bottom: 10px; }
 
 /* tickets_festival */
 p.content {
