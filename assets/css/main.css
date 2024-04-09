@@ -2485,7 +2485,8 @@ ul.breadcrumb {
 .jobs th:nth-child(3), .jobs td:nth-child(3){
   width: 15%;}
 .jobs .contact{
-  margin-left: 90px;}
+  margin-left: 90px;
+  margin-bottom: 90px;}
 
 /* newsletter.html */
 #newsletter {
