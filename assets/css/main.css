@@ -2539,10 +2539,10 @@ p.content-deluxe {
 form.form-h {
   border: 3px solid slateblue;
   border-radius: 10px;
-  flex: 6;
   height: 100%;
   width: auto;
   padding: 5%;
+  max-width: fit-content;
 }
 
 #form-img {
@@ -2561,10 +2561,6 @@ form.form-h {
   height: auto;
 }
 
-#ref-h {
-  float: right;
-  margin-right: 4%;
-}
 
 .groupe {
   margin-bottom: 7%;
