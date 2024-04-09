@@ -2468,24 +2468,24 @@ ul.breadcrumb {
   border-radius: 6px; }
 .jobs table{
   color: black; }
-  .jobs tbody tr:nth-child(even) {
-    background-color: white; }
-  .jobs tbody tr:nth-child(odd) {
-    background-color: #dfdfdf; }
-  .jobs td:nth-child(1), .jobs td:nth-child(2){
-    border-right: 1px solid black; }
-  .jobs th:nth-child(3), .jobs td:nth-child(3){
-    text-align: right; }
-  .jobs th:nth-child(1), .jobs td:nth-child(1){
-    width: 15%; }
-  .jobs th:nth-child(1), .jobs td:nth-child(1){
-    width: 15%;}
-  .jobs th:nth-child(2), .jobs td:nth-child(2){
-    width: 70%;}
-  .jobs th:nth-child(3), .jobs td:nth-child(3){
-    width: 15%;}
-  .jobs .contact{
-    margin-left: 90px;}
+.jobs tbody tr:nth-child(even) {
+  background-color: white; }
+.jobs tbody tr:nth-child(odd) {
+  background-color: #dfdfdf; }
+.jobs td:nth-child(1), .jobs td:nth-child(2){
+  border-right: 1px solid black; }
+.jobs th:nth-child(3), .jobs td:nth-child(3){
+  text-align: right; }
+.jobs th:nth-child(1), .jobs td:nth-child(1){
+  width: 15%; }
+.jobs th:nth-child(1), .jobs td:nth-child(1){
+  width: 15%;}
+.jobs th:nth-child(2), .jobs td:nth-child(2){
+  width: 70%;}
+.jobs th:nth-child(3), .jobs td:nth-child(3){
+  width: 15%;}
+.jobs .contact{
+  margin-left: 90px;}
 
 /* newsletter.html */
 #newsletter {
@@ -2503,7 +2503,8 @@ ul.breadcrumb {
     display: block;
     margin: 0 auto; }
   #newsletter p:last-of-type{
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 90px; }
 
 /* plan.html */
 .google-map iframe {
