@@ -2177,10 +2177,10 @@ button,
         margin: 0; } }
 
 /* Logo Image */
-#imgLogo {
+.imgLogo {
   width: 1.625em;
 }
-#imgLogo:hover {
+.imgLogo:hover {
   transform: scaleX(-1);
 }
 
@@ -2399,20 +2399,23 @@ ul.breadcrumb {
       text-decoration: underline; }
 
 /* Footer */
-#footer .copyright {
-  color: #9fa3a6;
-  font-size: 0.9em; }
-  #footer .copyright a {
-    color: inherit; }
-    footer ul:not(#socialMedia ul) {
-      display: flex;
-      justify-content: space-around;
-      font-family: "Roboto Slab", serif;
-      letter-spacing: 0.075em;
-      color: brown; }
-  footer ul li {
-      padding: 1em;
-      list-style-type: none; }
+#footer {
+  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  padding-top: 3em; }
+  #footer .copyright {
+    color: #9fa3a6;
+    font-size: 0.9em; }
+    #footer .copyright a {
+      color: inherit; }
+      footer ul:not(#socialMedia ul) {
+        display: flex;
+        justify-content: space-around;
+        font-family: "Roboto Slab", serif;
+        letter-spacing: 0.075em;
+        color: brown; }
+        footer ul li {
+            padding: 1em;
+            list-style-type: none; }
 
 /* Socials */
 #socialMedia li {
