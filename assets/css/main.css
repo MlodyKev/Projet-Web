@@ -2420,9 +2420,9 @@ button,
   padding: 0 0;}
 #socialMedia svg {
   width: 3em; }
-#socialMedia {
-  text-align: center;
-}
+#socialMedia ul {
+  display: flex;
+  justify-content: center; }
       
     /* Only for categories pages*/
     .rock #banner, .techno #banner, .rap #banner {
