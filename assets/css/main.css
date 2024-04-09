@@ -2643,3 +2643,15 @@ form.form-h {
   width: 50%;
   height: auto;
 }
+
+
+.merch-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.merch-image-container img {
+  margin: 1%;
+  width: 40%;
+}
