@@ -2543,6 +2543,12 @@ form.form-h {
   margin-bottom: 7%; }
   .groupe#reservation-btn {
     margin-top: 2px; }
+.image.gauche {
+  max-width: 30%;
+  width: min-content;
+  float: right; }
+  .image.gauche img {
+    width: 100%; }
 
 /* Tickets Transport */
 p.italic {
