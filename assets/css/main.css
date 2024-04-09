@@ -2428,6 +2428,11 @@ ul.breadcrumb {
   justify-content: center; }
       
 /* Categories */
+.rock .content h2, .techno .content h2, .rap .content h2 {
+  font-size:3em;
+  margin-bottom: 0.5em;
+}
+
 .rock #banner, .techno #banner, .rap #banner {
   flex-wrap: wrap;
   margin-top: -6em; }
