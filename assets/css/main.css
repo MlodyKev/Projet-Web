@@ -2524,3 +2524,122 @@ button,
   font-size: 110%;
   margin-top: 40px;
   margin-bottom: 10px; }
+
+
+/* tickets_festival */
+p.content {
+  margin: 20px;
+  margin-right: 10%;
+}
+
+p.content-deluxe {
+  margin-left: 7%;
+}
+
+form.form-h {
+  margin-left: 5%;
+  border: 3px solid slateblue;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: fit-content;
+}
+
+#nom {
+  display: inline;
+}
+
+#form-img {
+  display: flex;
+}
+
+.form-h {
+  flex: 1;
+  margin-right: 5%;
+  height: 100%;
+  width: auto;
+  padding: 5%;
+}
+
+#parking {
+  width: 40%;
+  max-width: fit-content;
+  height: auto;
+}
+
+#ref-h {
+  float: right;
+  margin-right: 4%;
+}
+
+.groupe {
+  margin-bottom: 7%;
+}
+
+
+/* tickets_transport */
+p.italic {
+  font-style: italic;
+  font-size: smaller;
+}
+
+form.form-he {
+  margin-left: 5%;
+  border: 3px solid slateblue;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 50%;
+}
+
+/* merch */
+.barre-navigation {
+  display: flex;
+  background-color: #881B1B;
+  border-radius: 10px;
+  justify-content: space-around;
+  max-height: fit-content;
+}
+
+.barre-navigation > div {
+  margin: auto;
+  padding: 4%;
+  width: 25%;
+  font-size: larger;
+}
+
+.barre-navigation a:hover {
+  background-color: salmon;
+  color: white;
+  border-radius: 10px;
+  padding: 13%
+}
+
+.barre-navigation a.active {
+  background-color: #666; 
+}
+
+.contenu {
+  margin-top: 5%;
+  font-size: larger;
+}
+
+.contenu > div {
+  display: none; 
+}
+
+p.content {
+  margin: 20px;
+}
+
+form.form-h {
+  /* margin-left: 5%; */
+  border: 3px solid slateblue;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: fit-content;
+}
+
+.merch {
+  
+  width: 50%;
+  height: auto;
+}
